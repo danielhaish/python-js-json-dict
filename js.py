@@ -36,13 +36,3 @@ class JsJson(dict):
 
     def __str__(self):
      return str(self.json_data)
-
-bob = JsJson({"x": {'d':{'c': 20}}})
-boby = JsJson({"x": {'d':{'c': 20}}})
-bob.x.d.c = 30
-print(bob.x)
-print(boby)
-print(boby == bob)
-print(bob.x.d.c == 30)
-x = boby['x']['d']['c']
-print(bob.items())

@@ -1,7 +1,8 @@
 
-class JsJson:
+class JsJson(dict):
     def __init__(self, json_data, first_json=None):
-
+        if isinstance(json_data, dict):
+            super(JsJson, self).__init__(json_data)
         dict.__setattr__(self, 'json_data', json_data)
         dict.__setattr__(self, 'first_json', first_json)
         dict.__setattr__(self, 'atrs', [])
@@ -21,7 +22,10 @@ class JsJson:
             return js_json_object.json_data == self.json_data
         return self.json_data == js_json_object
 
-
+    def __getitem__(self, item):
+        if item == None:
+            return self.json_data
+        return type(self)(self.json_data[item], self.first_json)
 
     def __setattr__(self, name, value):
         pointer = self.first_json.json_data
@@ -40,3 +44,5 @@ print(bob.x)
 print(boby)
 print(boby == bob)
 print(bob.x.d.c == 30)
+x = boby['x']['d']['c']
+print(bob.items())

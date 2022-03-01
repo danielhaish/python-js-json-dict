@@ -16,6 +16,13 @@ class JsJson:
 
         return type(self)(self.json_data[item], self.first_json)
 
+    def __eq__(self, js_json_object):
+        if isinstance(js_json_object, JsJson):
+            return js_json_object.json_data == self.json_data
+        return self.json_data == js_json_object
+
+
+
     def __setattr__(self, name, value):
         pointer = self.first_json.json_data
         for i in self.first_json.atrs:
@@ -27,6 +34,9 @@ class JsJson:
      return str(self.json_data)
 
 bob = JsJson({"x": {'d':{'c': 20}}})
+boby = JsJson({"x": {'d':{'c': 20}}})
 bob.x.d.c = 30
 print(bob.x)
-print(bob)
+print(boby)
+print(boby == bob)
+print(bob.x.d.c == 30)

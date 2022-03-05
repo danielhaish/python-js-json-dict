@@ -25,10 +25,7 @@ author = 'bobykendy'
 
 # The full version, including alpha/beta/rc tags
 release = 'latest'
-<<<<<<< HEAD
 
-=======
->>>>>>> 6eda42e2d134f9c8b41bd2cd88635069c54753eb
 # -- General configuration ---------------------------------------------------
 
 # Add any Sphinx extension module names here, as strings. They can be

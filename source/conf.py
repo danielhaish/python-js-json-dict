@@ -18,6 +18,7 @@
 # -- Project information -----------------------------------------------------
 import socket
 import smtplib
+import sphinx_rtd_theme
 import os
 project = 'js object python'
 copyright = '2022, bobykendy'
@@ -32,6 +33,7 @@ release = 'latest'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+  'sphinx_rtd_theme'
 ]
 
 # Add any paths that contain templates here, relative to this directory.

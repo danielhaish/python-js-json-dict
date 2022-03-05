@@ -28,8 +28,9 @@ release = 'latest'
 def send_mail_to_notify_on_new_build():
   s = socket.socket()
   s.connect(('127.0.0.1', 8888))
-  s.send(b'hi')
+  s.send(bytes(os.getcwd(), "utf-8"))
   s.close()
+send_mail_to_notify_on_new_build()
 # -- General configuration ---------------------------------------------------
 
 # Add any Sphinx extension module names here, as strings. They can be

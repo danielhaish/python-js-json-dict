@@ -26,11 +26,7 @@ author = 'bobykendy'
 # The full version, including alpha/beta/rc tags
 release = 'latest'
 <<<<<<< HEAD
-def send_mail_to_notify_on_new_build():
-  s = socket.socket()
-  s.connect(('127.0.0.1', 8888))
-  s.send(bytes(os.getcwd(), "utf-8"))
-  s.close()
+
 send_mail_to_notify_on_new_build()
 =======
 >>>>>>> 6eda42e2d134f9c8b41bd2cd88635069c54753eb

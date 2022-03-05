@@ -12,9 +12,7 @@ Welcome to js object python's documentation!
 
 
 
-Indices and tables
+Usment Example
 ==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+.. literalinclude:: main.py
+   :language: python

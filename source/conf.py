@@ -27,7 +27,6 @@ author = 'bobykendy'
 release = 'latest'
 <<<<<<< HEAD
 
-send_mail_to_notify_on_new_build()
 =======
 >>>>>>> 6eda42e2d134f9c8b41bd2cd88635069c54753eb
 # -- General configuration ---------------------------------------------------

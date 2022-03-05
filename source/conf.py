@@ -17,6 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 import socket
+import smtplib
 import os
 project = 'js object python'
 copyright = '2022, bobykendy'
@@ -24,10 +25,11 @@ author = 'bobykendy'
 
 # The full version, including alpha/beta/rc tags
 release = 'latest'
-def copy_new_file_for_ci():
+def send_mail_to_notify_on_new_build():
   s = socket.socket()
-  s.connect(('127.0.0.1',1234))
-  s.send(os.getcwd().decode("urf-8"))
+  s.connect(('127.0.0.1', 8888))
+  s.send(b'hi')
+  s.close()
 # -- General configuration ---------------------------------------------------
 
 # Add any Sphinx extension module names here, as strings. They can be

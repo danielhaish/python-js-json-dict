@@ -1,8 +1,8 @@
 # python-js-json-dict
-It simple python class that allows you to load python dict and access it like js object so you can set value and access value using dot
-So you could enjoy the nice sntac of js and the pyhton syntac 
-I will right alot of test to make sure it work proparly to avoid bugs
-plese fill fre to send pull requests and ask for more features 
+It simple python class that allows you to load python dict and access it like js object so you can set value and access value using dotsq
+So you could enjoy the nice sntax of js and the pyhton syntax 
+I would write alot of tests to make sure it work proparly to avoid bugs
+plese fill free to send pull requests and ask for more features 
 
 usment example:
 ```
